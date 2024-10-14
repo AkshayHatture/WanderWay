@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+.add-btn{
+    background-color:rgb(61, 192, 175) !important;
+    border: none !important;
+}
 
 /*nav_bar*/
 
@@ -63,6 +67,10 @@
     margin-right: 1rem;
 }
 
+.errordiv{
+    height: 100vh;
+}
+
 
 .f-info{
     text-align: center;
@@ -76,7 +84,7 @@
 
 /*Cards*/
 
-.card{
+.listing-card{
     border:none !important;
     margin-bottom: 2rem;
 }
@@ -108,6 +116,12 @@
 .card-img-overlay:hover{
     opacity: 0.1;
     background-color: white;
+}
+
+/*show page*/
+.show-img{
+    height: 30vh;
+
 }
 
 
