@@ -5,6 +5,8 @@
   font-style: normal;
 }
 
+
+
 .add-btn{
     background-color:rgb(61, 192, 175) !important;
     border: none !important;
@@ -23,7 +25,7 @@
 }
 
 .fa-compass{
-    color: #fe424d;
+    color: rgb(61, 192, 175);
     font-size: 2rem;
 
 }
@@ -89,6 +91,8 @@
     margin-bottom: 2rem;
 }
 
+
+
 .card-img-top {
     border-radius: 1rem !important;
     width: 100% !important;
@@ -123,10 +127,3 @@
     height: 30vh;
 
 }
-
-
-
-
-
-
-
