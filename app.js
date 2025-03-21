@@ -49,7 +49,7 @@ async function main() {
 }
 
 app.get("/", (req, res) => {
-    res.send("hi,im root");
+    res.redirect("/listings");
 });
 
 
