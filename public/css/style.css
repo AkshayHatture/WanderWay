@@ -24,6 +24,10 @@
     top: 5px;
 }
 
+.fullpage{
+    height: 100vh;
+}
+
 .fa-compass{
     color: rgb(61, 192, 175);
     font-size: 2rem;

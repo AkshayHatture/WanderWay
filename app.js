@@ -30,12 +30,11 @@ app.use(methodOverride("_method"));
 app.engine('ejs',ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
-
 //db connection
 
+// MONGO_URL='mongodb://127.0.0.1:27017/wanderlust';
+
 const dbUrl = process.env.ATLASDB_URL;
-
-
 
 main()
 .then(()=>{
@@ -54,18 +53,17 @@ app.get("/", (req, res) => {
 });
 
 
-
 const store = MongoStore.create({
-    mongoUrl: dbUrl,
+    mongoUrl:dbUrl,
     crypto:{
         secret:process.env.SECRET,
     },
     touchAfter:24*3600,
-});
-
-store.on("error",()=>{
-    console.log("ERROR IN MONGO SESSION STORE",err)
 })
+
+store.on("error", ()=>{
+    console.log("Error in MONGO SESSION STORE",err);
+});
 
 //express-session
 const sessionOptions ={
@@ -78,6 +76,7 @@ const sessionOptions ={
         maxAge: 7*24*60*60*1000,
         httpOnly:true
     },
+
 };
 
 
@@ -95,7 +94,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 
-//flash-connect
+//res.locals
 app.use((req,res,next)=>{
     res.locals.success = req.flash("success");
     res.locals.error = req.flash("error");
