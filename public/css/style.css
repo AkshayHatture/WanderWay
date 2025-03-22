@@ -5,6 +5,15 @@
   font-style: normal;
 }
 
+.navbar-collapse {
+    background-color: white !important;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black !important;
+}
 
 
 .add-btn{
