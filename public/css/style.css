@@ -135,46 +135,6 @@
     background-color: white;
 }
 
-
-#filter-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Hide extra icons on small screens */
-#filters {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    width: 80%; /* Adjust based on design */
-    max-width: 300px; /* Limit width */
-    scrollbar-width: none; /* Hide scrollbar */
-}
-
-#filters::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in WebKit browsers */
-}
-
-/* Show only 2 icons on small screens */
-@media (max-width: 600px) {
-    .filter {
-        min-width: 50%; /* Each icon takes up half of available space */
-    }
-}
-
-/* Scroll Button */
-#next-btn {
-    background-color: #3dc0af;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 50%;
-    margin-left: 10px;
-}
-
-
 /*show page*/
 .show-img{
     height: 30vh;
